@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page tittle</title>
+</head>
+<body>
+
+<h1>JS-Laskurit</h1>
+
+<h3>Erilaisia javascript-laskureita.</h3>
+<p></p>
+   <br>
+   <br>
+<div>
+    <h3>JS laskuri 1</h3>
+    <p>Anna 3 eri lukua, niin ohjelma lajittelee ne pienimmästä suurimpaan</p>
+    <form id="ekaLaskuri">
+        Anna 1. luku: <input type="number" id="luku1"/>
+        <br>
+        <br>
+        Anna 2. luku: <input type="number" id="luku2"/>
+        <br>
+        <br>
+        Anna 3. luku: <input type="number" id="luku3"/>
+        <br>
+        <br>
+        <button type="button" onclick="lajitteleNumerot()">Lajittele</button>
+        <button onclick="nollaaLaskuri()">Tyhjennä</button>
+        <p>Luvut pienimmästä suurimpaan:</p>
+        <p id="tulos"></p>
+    </form>
+    <br>
+</div>
+   <br>
+   <br>
+<div>
+   <h3>JS laskuri 2</h3>
+    <p>Anna luku niin laskuri kertoo onko kyseessä parillinen vai pariton luku.</p>
+      <form id="tokaLaskuri">
+         Anna luku: <input type="number" id="pariLuku1"/>
+         <br>
+         <p id="kumpi"></p>
+         <br>
+         <button onclick="tarkistaLuku()">Tarkista</button>
+         <button onclick="nollaaLaskuri()">Tyhjennä</button>
+      </form>
+      <br>
+ </div>
+   <br>
+   <br>
+ <div>
+   <h3>JS tulkki 3</h3>
+   <p>Käännä lause: Hei maailma!</p>
+   
+      <label for="tulkkaus">Valitse kieli:</label>
+         <select name="kielet" id="kielet">
+            <option value="cho"> </option> 
+            <option value="eng">englanti</option> 
+            <option value="fra">ranska</option> 
+            <option value="esp">espanja</option> 
+            <option value="pol">puola</option> 
+         </select>
+         <br>
+         <br>
+      <button onclick="tulkkaa()">Käännä</button>
+      <p id="tulkkaus">Käännös on:</p>
+      <br>
+ </div>
+   <br>
+   <br>
+ <div>
+    <h3>JS laskuri 4</h3>
+    <p>Anna 5 eri lukua, niin ohjelma tarkistaa mikä niistä on suurin.</p>
+      <form id="nelosLaskuri">
+         Anna 1. luku: <input type="number" id="eka" />
+         <br>
+         <br>
+         Anna 2. luku: <input type="number" id="toka" />
+         <br>
+         <br>
+         Anna 3. luku: <input type="number" id="kolmas" />
+         <br>
+         <br>
+         Anna 4. luku: <input type="number" id="neljas" />
+         <br>
+         <br>
+         Anna 5. luku: <input type="number" id="viides"/>
+         <br>
+         <br>
+         <button type="button" onclick="suurinLuku()">Tarkista</button>
+         <button onclick="nollaaSuurin()">Tyhjennä</button>
+         <br>
+         <p id="suurin"> <br> </p>
+      </form>
+      <br>
+ </div>
+   <br>
+   <br>
+ <div>
+    <h3>JS laskuri 2</h3>
+    <p>Tarkista mitä ajoneuvoa saat kuljettaa syöttämällä ikäsi</p>
+      <form>
+         Kerro ikäsi: <input type = "number" id = "age"/>
+         <br>
+         <br>
+         <button type="button" onclick="lupaAjaa()">Tarkista ajo-oikeus</button>
+         <br>
+         <p id="lupa"></p>
+         <br>
+         <p>Muistathan että tarvitset myös ajokortin moottoriajoneuvon kuljettamiseen!</p>
+         <br>
+      </form>
+ <!-- <16v - polkupyörää, <18v - mopoa, muutoin autoa -->
+ </div>
+   <br>
+   <br>
+ <script type="text/javascript" src="laskurit.js"></script>
+</body>
+</html>

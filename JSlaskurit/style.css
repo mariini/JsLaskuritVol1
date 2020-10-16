@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(240, 240, 240);
+    color: rgb(60, 60, 60);
+    font-family:verdana;
+}
+
+mark {
+    background-color: grey;
+}
+
+div {
+    background-color: #ADD8E6;
+}
